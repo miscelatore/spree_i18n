@@ -488,7 +488,7 @@ it:
     add_rule_of_type: Aggiungi regola di tipologia
     add_state: Aggiungi Stato/Provincia
     add_stock: Aggiungi Scorte
-    add_to_cart: Aggiungi alla carta
+    add_to_cart: Aggiungi al carrello
     add_variant: Aggiungi variante
     add_store: Nuovo negozio
     add_store_credit: Aggiungi credito negozio
@@ -925,7 +925,7 @@ it:
     included_in_price: Incluso nel prezzo
     included_price_validation: non può essere selezionato senza aver impostato una Zona di Tassazione predefinita
     incomplete: incompleto
-    info_product_has_multiple_skus: "Questo prodotto ha% {count} varianti:"
+    info_product_has_multiple_skus: "Questo prodotto ha %{count} varianti:"
     info_number_of_skus_not_shown:
       one: "e un'altra"
       other: "e altre %{count}"
