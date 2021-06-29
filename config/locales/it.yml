@@ -1,4 +1,11 @@
 it:
+  gateway:
+    'Spree::Gateway::Bogus': Bogus
+    'Spree::Gateway::BogusSimple': BogusSimple
+    'Spree::Gateway::PayPalExpress': PayPalExpress
+    'Spree::Gateway::StripeGateway': StripeGateway
+    'Spree::PaymentMethod::Check': Check
+    'Spree::PaymentMethod::StoreCredit': StoreCredit
   activemodel:
     errors:
       models:
