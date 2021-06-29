@@ -541,17 +541,17 @@ it:
     admin:
       tab:
         configuration: Impostazioni
-        option_types: Opzioni
+        option_types: Opzioni Prodotto
         orders: Ordini
         overview: Quadro generale
         products: Prodotti
         promotions: Promozioni
         promotion_categories: Categorie Promozione
-        properties: Proprietà
+        properties: Proprietà Prodotto
         prototypes: Prototipi
         reports: Report
-        taxonomies: Tassonomie
-        taxons: Taxon
+        taxonomies: Categorie
+        taxons: Ricerca Categorie
         users: Utenti
         return_authorizations: Autorizzazioni al reso
         customer_returns: Resi dei clienti
@@ -1303,7 +1303,7 @@ it:
       product_source:
         group: Dal gruppo di prodotti
         manual: Scegli manualmente
-    products: Prodotti
+    products: Catalogo Prodotti
     promotion: Promozioni
     promotionable: Meritevole di promozione
     promotion_cloned: La promozione è stata clonata
