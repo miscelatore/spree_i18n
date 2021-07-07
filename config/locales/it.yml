@@ -98,7 +98,7 @@ it:
         name: Nome
       spree/product:
         available_on: Disponibile dal
-        discontinue_on: Interrompi il
+        discontinue_on: Disponibile fino al
         cost_currency: Valuta Costo
         cost_price: Prezzo di Costo
         description: Descrizione
@@ -791,7 +791,7 @@ it:
     destination: Destinazione
     destroy: Elimina
     discount_amount: Importo dello sconto
-    discontinue_on: Interrompi il
+    discontinue_on: Disponibile fino al
     discontinued: Interrotto
     dismiss_banner: "No, grazie! Non sono interessato, non mostrare più questo messaggio"
     display: Mostra
@@ -932,7 +932,9 @@ it:
     included_in_price: Incluso nel prezzo
     included_price_validation: non può essere selezionato senza aver impostato una Zona di Tassazione predefinita
     incomplete: incompleto
-    info_product_has_multiple_skus: "Questo prodotto ha %{count} varianti:"
+    info_product_has_multiple_skus:
+      one: "Questo prodotto ha %{count} variante:"
+      other: "Questo prodotto ha %{count} varianti:"
     info_number_of_skus_not_shown:
       one: "e un'altra"
       other: "e altre %{count}"
