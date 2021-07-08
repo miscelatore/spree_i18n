@@ -102,7 +102,7 @@ it:
         cost_currency: Valuta Costo
         cost_price: Prezzo di Costo
         description: Descrizione
-        master_price: Prezzo
+        master_price: Prezzo Vendita
         name: Nome
         on_hand: Disponibilità
         shipping_category: Categoria di Spedizione
@@ -221,8 +221,8 @@ it:
         one: Metodo di Pagamento
         other: Metodi di Pagamento
       spree/product:
-        one: Prodotto
-        other: Prodotti
+        one: Articolo
+        other: Articoli
       spree/promotion:
         one: Promozione
         other: Promozioni
@@ -325,7 +325,7 @@ it:
         spree/classification:
           attributes:
             taxon_id:
-              already_linked: "è già collegato a questo prodotto"
+              already_linked: "è già collegato a questo articolo"
         spree/credit_card:
           attributes:
             base:
@@ -344,7 +344,7 @@ it:
             discontinue_on:
               invalid_date_range: deve essere successiva alla data disponibile
             base:
-              cannot_destroy_if_attached_to_line_items: Non è possibile eliminare i prodotti una volta allegati agli elementi pubblicitari.
+              cannot_destroy_if_attached_to_line_items: Non è possibile eliminare i articoli una volta allegati agli elementi pubblicitari.
         spree/refund:
           attributes:
             amount:
@@ -383,7 +383,7 @@ it:
             base:
               cannot_destroy_if_attached_to_line_items: Impossibile eliminare le varianti una volta che sono allegate agli elementi pubblicitari.
               no_master_variant_found_to_infer_price: Nessuna variante principale trovata per dedurre il prezzo
-              must_supply_price_for_variant_or_master: È necessario fornire il prezzo per la variante o il prezzo principale per il prodotto.
+              must_supply_price_for_variant_or_master: È necessario fornire il prezzo per la variante o il prezzo principale per il articolo.
         spree/image:
           attributes:
             attachment:
@@ -490,8 +490,8 @@ it:
     add_new_style: Aggiungi Nuovo Stile
     add_one: Aggiungine Una
     add_option_value: Aggiungi Valore Opzione
-    add_product: Aggiungi Prodotto
-    add_product_properties: Aggiungi Proprietà Prodotto
+    add_product: Aggiungi Articolo
+    add_product_properties: Aggiungi Proprietà Articolo
     add_rule_of_type: Aggiungi regola di tipologia
     add_state: Aggiungi Stato/Provincia
     add_stock: Aggiungi Scorte
@@ -541,13 +541,13 @@ it:
     admin:
       tab:
         configuration: Impostazioni
-        option_types: Opzioni Prodotto
+        option_types: Opzioni Articolo
         orders: Ordini
         overview: Quadro generale
-        products: Prodotti
+        products: Articoli
         promotions: Promozioni
         promotion_categories: Categorie Promozione
-        properties: Proprietà Prodotto
+        properties: Proprietà Articolo
         prototypes: Prototipi
         reports: Report
         taxonomies: Categorie
@@ -599,6 +599,7 @@ it:
     approved_at: Approvato a
     are_you_sure: Sei sicuro?
     are_you_sure_delete: Sei sicuro di voler rimuovere il record?
+    article_availability_period: Periodo Validità art.
     associated_adjustment_closed: La regolazione associata viene chiusa e non verrà ricalcolata. Vuoi aprirlo?
     at_symbol: '@'
     authorization_failure: Autorizzazione Fallita
@@ -657,7 +658,7 @@ it:
       checkout: check-out
       empty_info: 'Il tuo carrello è vuoto.'
       header: Il tuo carrello acquisti
-      product: prodotto
+      product: articolo
       quantity: quantità
       remove_from_cart: Rimuovi dal carrello
       title: Carrello della spesa
@@ -680,9 +681,9 @@ it:
       back_to_cart: torna al carrello
       delivery_method: metodo di consegna
       header: Check-out
-      product: Prodotto
+      product: Articolo
     choose_a_customer: Scegli un cliente
-    choose_a_taxon_to_sort_products_for: Scegli un taxon con cui ordinare i prodotti
+    choose_a_taxon_to_sort_products_for: Scegli un taxon con cui ordinare i articoli
     choose_currency: Scegli una Valuta
     choose_dashboard_locale: Scegli una Lingua per la Dashboard
     choose_location: Scegli Località
@@ -690,13 +691,13 @@ it:
     clear_cache: Pulisci la Cache
     clear_cache_ok: La Cache è stato pulita
     clear_cache_warning: Pulire la Cache ridurrà temporaneamente le performance del Sito.
-    click_and_drag_on_the_products_to_sort_them: Clicca e trascina i prodotti per ordinarli.
+    click_and_drag_on_the_products_to_sort_them: Clicca e trascina i articoli per ordinarli.
     clone: Clona
     close: Chiudi
     close_all_adjustments: Chiudi Tutte le Variazioni
     code: Codice
     company: Azienda
-    compare_at_price: Confronta al prezzo
+    compare_at_price: Prezzo di Listino
     complete: completo
     configuration: Impostazione
     configurations: Impostazioni
@@ -708,8 +709,9 @@ it:
     continue: Continua
     continue_as_guest: Continua come ospite
     continue_shopping: Continua gli acquisti
-    cost_currency: Valuta Costo
-    cost_price: Prezzo di Costo
+    cost_currency: Valuta di Acquisto
+    cost_price: Prezzo di Acquisto
+    cost_price_value: Valori di Acquisto
     could_not_create_customer_return: Impossibile creare Reso Cliente
     could_not_create_stock_movement: Si è verificato un problema nel salvare il movimento di magazzino. Per favore prova di nuovo.
     count_on_hand: Disponibilità
@@ -782,12 +784,12 @@ it:
     delete: Elimina
     deleted: Eliminato
     delete_from_taxon: Rimuovi dalla Taxon
-    discontinued_variants_present: Alcuni elementi pubblicitari in questo ordine contengono prodotti che non sono più disponibili.
+    discontinued_variants_present: Alcuni elementi pubblicitari in questo ordine contengono articoli che non sono più disponibili.
     delivery: Consegna
     delivery_information: Informazioni di consegna
     depth: Profondità
     details: Dettagli
-    description: Descrizione
+    description: Descrizione Articolo
     destination: Destinazione
     destroy: Elimina
     discount_amount: Importo dello sconto
@@ -803,16 +805,16 @@ it:
     editing_user: Modifica Utente
     eligibility_errors:
       messages:
-        has_excluded_product: Il carrello contiene un prodotto che non permette l'applicazione di questo codice coupon.
+        has_excluded_product: Il carrello contiene un articolo che non permette l'applicazione di questo codice coupon.
         item_total_less_than: "Questo codice coupon non può essere applicato a ordini di importo inferiore a %{amount}."
         item_total_less_than_or_equal: "Questo codice coupon non può essere applicato a ordini di importo inferiore o uguale a %{amount}."
         item_total_more_than: "Questo codice coupon non può essere applicato a ordini di importo maggiore di %{amount}."
         item_total_more_than_or_equal: "Questo codice coupon non può essere applicato a ordini di importo maggiore o uguale di %{amount}."
         limit_once_per_user: Questo codice coupon può essere usato solamente una volta per utente.
-        missing_product: Questo codice coupon non può essere applicato poiché non hai nel carrello tutti i prodotti necessari.
-        missing_taxon: Devi aggiungere un prodotto da tutte le categorie appropriate prima di applicare questo codice coupon.
-        no_applicable_products: Devi aggiungere un prodotto appropriato prima di applicare questo codice coupon.
-        no_matching_taxons: Devi aggiungere un prodotto da una categorie appropriata prima di applicare questo codice coupon.
+        missing_product: Questo codice coupon non può essere applicato poiché non hai nel carrello tutti i articoli necessari.
+        missing_taxon: Devi aggiungere un articolo da tutte le categorie appropriate prima di applicare questo codice coupon.
+        no_applicable_products: Devi aggiungere un articolo appropriato prima di applicare questo codice coupon.
+        no_matching_taxons: Devi aggiungere un articolo da una categorie appropriata prima di applicare questo codice coupon.
         no_user_or_email_specified: Devi fare il login o fornire una email prima di applicare questo codice coupon.
         no_user_specified: Devi fare il login prima di applicare questo codice coupon.
         not_first_order: Questo codice coupon può essere applicato solo al tuo primo ordine.
@@ -900,7 +902,7 @@ it:
     go_to_twitter: Vai su Twitter
     guest_checkout: Checkout Ospite
     guest_user_account: Checkout come Ospite
-    has_no_shipped_units: non ha prodotti spediti
+    has_no_shipped_units: non ha articoli spediti
     header_banner: Banner di intestazione
     height: Altezza
     hide_cents: Nascondi centesimi
@@ -933,8 +935,8 @@ it:
     included_price_validation: non può essere selezionato senza aver impostato una Zona di Tassazione predefinita
     incomplete: incompleto
     info_product_has_multiple_skus:
-      one: "Questo prodotto ha %{count} variante:"
-      other: "Questo prodotto ha %{count} varianti:"
+      one: "Questo articolo ha %{count} variante:"
+      other: "Questo articolo ha %{count} varianti:"
     info_number_of_skus_not_shown:
       one: "e un'altra"
       other: "e altre %{count}"
@@ -1011,8 +1013,8 @@ it:
     manual_intervention_required: È richiesto un'intervento manuale
     manage_variants: Gestisci le Varianti
     master: Master 
-    master_price: Prezzo principale
-    master_sku: SKU principale
+    master_price: Prezzo Vendita
+    master_sku: Codice Articolo (SKU)
     match_choices:
       all: Tutti
       none: Nessuno
@@ -1031,9 +1033,9 @@ it:
     move_stock_between_locations: Trasferisci Scorte tra Magazzini
     my_account: Il Mio Account
     my_orders: I Miei Ordini
-    name: Nome
+    name: Nome Articolo
     name_on_card: Nome sulla carta
-    name_or_sku: Nome o SKU (inserisci almeno i primi 4 caratteri del nome del prodotto)
+    name_or_sku: Nome o SKU (inserisci almeno i primi 4 caratteri del nome del articolo)
     nav_bar:
       admin_panel: Pannello di amministrazione
       change_country: cambia Paese
@@ -1060,7 +1062,7 @@ it:
     new_order_completed: Nuovo Ordine Completato
     new_payment: Nuovo Pagamento
     new_payment_method: Nuovo Metodo di Pagamento
-    new_product: Nuovo Prodotto
+    new_product: Nuovo Articolo
     new_promotion: Nuova Promozione
     new_promotion_category: Nuova Categoria Promozione
     new_property: Nuova Proprietà
@@ -1097,9 +1099,9 @@ it:
     no_payment_provider_settings_message: Questo fornitore di servizi di pagamento non ha impostazioni personalizzate disponibili
     no_pending_payments: Nessun pagamento pendente
     no_product_available:
-      for_this_quantity: Siamo spiacenti, sembra che alcuni prodotti non siano disponibili nella quantità selezionata.
+      for_this_quantity: Siamo spiacenti, sembra che alcuni articoli non siano disponibili nella quantità selezionata.
       opps: Ops!
-    no_products_found: Nessun prodotto trovato
+    no_products_found: Nessun articolo trovato
     no_results: Nessun risultato
     no_rules_added: Nessuna regola aggiunta
     no_resource_found: "Nessun %{resource} trovato"
@@ -1119,10 +1121,10 @@ it:
     notice_messages:
       icon_removed: L'immagine è stata rimossa con successo
       prices_saved: Prezzi salvati con successo
-      product_cloned: Il prodotto è stato clonato
-      product_deleted: Il prodotto è stato eliminato
-      product_not_cloned: Il prodotto non può essere clonato
-      product_not_deleted: Il prodotto non può essere eliminato
+      product_cloned: Il articolo è stato clonato
+      product_deleted: Il articolo è stato eliminato
+      product_not_cloned: Il articolo non può essere clonato
+      product_not_deleted: Il articolo non può essere eliminato
       variant_deleted: La variante è stata eliminata
       variant_not_deleted: La variante non può essere eliminata
     num_orders: "# Ordini"
@@ -1137,6 +1139,7 @@ it:
     option_value: Valore Opzione
     option_values: Valori Opzione
     optional: Opzionale
+    optional_parameter: Parametri Opzionali
     options: Opzioni
     or: o
     or_over_price: "%{price} o maggiore"
@@ -1237,7 +1240,7 @@ it:
       checkout: Check-out
       description: Descrizione
       details: Dettagli
-      products_included_in_promotion: Prodotti inclusi nella promozione
+      products_included_in_promotion: Articoli inclusi nella promozione
       quantity: Quantità
       view_cart: Visualizza il carrello
       you_may_also_like: Potrebbe piacerti anche
@@ -1263,7 +1266,7 @@ it:
       no_results_found: Nessun risultato trovato
       not_found_filters1: Non siamo riusciti a trovare una corrispondenza con questi filtri.
       not_found_filters2: Prova un'altra scelta.
-      not_found_text1: Non siamo riusciti a trovare prodotti per '%{keywords}'.
+      not_found_text1: Non siamo riusciti a trovare articoli per '%{keywords}'.
       not_found_text2: Per favore prova un'altra ricerca.
       price: prezzo
       price_high_to_low: PREZZO (ALTO - BASSO)
@@ -1281,7 +1284,7 @@ it:
     pre_tax_total: Totale al netto delle tasse
     preferred_reimbursement_type: Tipologia di rimborso preferita
     presentation: Presentazione
-    preview_product: Anteprima prodotto
+    preview_product: Anteprima articolo
     preview_taxon: Anteprima Taxon
     previous: Precedente
     previous_state_missing: "n.a."
@@ -1291,21 +1294,22 @@ it:
     price_range: Gamma di Prezzo
     price_sack: Costo imballaggio
     process: Processa
-    product: Prodotto
-    product_details: Dettagli Prodotto
-    product_has_no_description: Questo prodotto non ha una descrizione
-    product_not_available_in_this_currency: Questo prodotto non è disponibile nella valuta selezionata
-    product_properties: Proprietà del prodotto
+    product: Articolo
+    product_attributes: Attibuti Articolo
+    product_details: Dettagli Articolo
+    product_has_no_description: Questo articolo non ha una descrizione
+    product_not_available_in_this_currency: Questo articolo non è disponibile nella valuta selezionata
+    product_properties: Proprietà del articolo
     product_rule:
-      choose_products: Scegli i prodotti
-      label: Lordine deve contenere quantità x di questi prodotti
+      choose_products: Scegli gli articoli
+      label: Lordine deve contenere quantità x di questi articoli
       match_all: tutti
       match_any: almeno uno
       match_none: nessuno
       product_source:
-        group: Dal gruppo di prodotti
+        group: Dal gruppo di articoli
         manual: Scegli manualmente
-    products: Catalogo Prodotti
+    products: Catalogo Artocoli
     promotion: Promozioni
     promotionable: Meritevole di promozione
     promotion_cloned: La promozione è stata clonata
@@ -1349,8 +1353,8 @@ it:
         description: Descrizione
         name: Nome
       product:
-        description: L'ordine include i prodotti specificati
-        name: Prodotto/i
+        description: L'ordine include i articoli specificati
+        name: Articolo/i
       user:
         description: Disponibile solo per gli utenti specificati
         name: Utente
@@ -1358,7 +1362,7 @@ it:
         description: Disponibile solo per utenti autenticati
         name: L'utente ha effettuato il login
       taxon:
-        description: L'ordine include prodotti con tasse specificate
+        description: L'ordine include articoli con tasse specificate
         name: Taxon(s)
     promotions: Promozioni
     promotion_uses: Utilizzi Promozione
@@ -1485,6 +1489,7 @@ it:
     send_copy_of_all_mails_to: Invia copia di tutti i messaggi a
     send_mails_as: Invia messaggi come
     seo: SEO
+    seo_and_search_engine_parameters: Parametri motori di Ricerca e SEO
     seo_robots: SEO Robots
     seo_title: Titolo SEO
     server: Server
@@ -1550,9 +1555,10 @@ it:
       short: Mostra il selettore del negozio
       long: Visualizza il selettore del negozio nella barra di navigazione principale di Storefront e consenti agli utenti di modificare il negozio e la valuta
     sign_up: Iscriviti 
-    sku: SKU
+    sku: Codice Articolo (SKU)
     skus: SKU
     slug: Slug
+    slug_nx: Nome Pagina (SEO Slug)
     source: Origine
     social: Social
     special_instructions: Istruzioni Speciali
@@ -1624,7 +1630,7 @@ it:
       unable_to_delete: Impossibile eliminare il negozio.
     store_form:
       code_help: "Identificatore univoco del negozio, che è una versione abbreviata del nome del negozio (utilizzato come nome della directory di layout e utile anche per separare i modelli in base al negozio)"
-      checkout_zone_help: "La selezione della zona limiterà a quali Paesi o Stati vengono spediti i prodotti.
+      checkout_zone_help: "La selezione della zona limiterà a quali Paesi o Stati vengono spediti i articoli.
         Per ulteriori informazioni <a href='https://guides.spreecommerce.org/user/configuration/configuring_geography.html#zones' target='_blank' class='alert-link'>consulta la documentazione</a>"
       locales_help: "Installa l'<a href='https://github.com/spree-contrib/spree_i18n' target='_blank' class='alert-link'>estensione Spree I18n</a> per aggiungere altre lingue"
       social_help: "Se desideri collegarti ai tuoi account social nella parte a piè di pagina del tuo sito web, compila i campi sottostanti"
@@ -1709,8 +1715,8 @@ it:
     taxonomy_categories_name: Categorie
     taxonomy_edit: Modifica tassonomia
     taxonomy_tree_error: "La modifica richiesta non è stata accettata e l'albero è stato riportato allo stato precedente, per favore riprova."
-    taxonomy_tree_instruction: "* Click destro su un nodo nell'albero per accedere al menu e aggiungere, rimuovere o ordinare."
-    taxons: Taxon
+    taxonomy_tree_instruction: "* Click tasto dx destro su un nodo nell'albero per accedere al menu e aggiungere, rimuovere o ordinare."
+    taxons: Categorie
     test: Test
     test_mailer:
       test_email:
@@ -1790,7 +1796,7 @@ it:
     year: Anno
     you_have_no_orders_yet: Non hai alcun ordine
     your_cart_is_empty: Il tuo carrello è vuoto
-    your_order_is_empty_add_product: "Il tuo ordine è vuoto, per favore cerca e aggiungi un prodotto"
+    your_order_is_empty_add_product: "Il tuo ordine è vuoto, per favore cerca e aggiungi un articolo"
     zip: Cap
     zipcode: Codice Cap
     zipcode_required: Codice postale obbligatorio
